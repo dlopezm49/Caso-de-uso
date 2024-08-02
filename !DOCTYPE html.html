@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de Caso de Uso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plantilla de Caso de Uso</h1>
+
+        <form>
+            <label for="nombre">Nombre del Caso de Uso:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+
+            <label for="actor">Actor(es):</label>
+            <input type="text" id="actor" name="actor">
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+
+            <label for="precondiciones">Precondiciones:</label>
+            <textarea id="precondiciones" name="precondiciones"></textarea>
+
+            <label for="postcondiciones">Postcondiciones:</label>
+            <textarea id="postcondiciones" name="postcondiciones"></textarea>
+
+            <label for="flujo_principal">Flujo Principal:</label>
+            <textarea id="flujo_principal" name="flujo_principal"></textarea>
+
+            <label for="flujos_alternativos">Flujos Alternativos:</label>
+            <textarea id="flujos_alternativos" name="flujos_alternativos"></textarea>
+
+            <label for="requisitos">Requisitos Especiales:</label>
+            <textarea id="requisitos" name="requisitos"></textarea>
+
+            <label for="notas">Notas y Problemas Abiertos:</label>
+            <textarea id="notas" name="notas"></textarea>
+
+            <label for="historial">Versiones y Historial de Cambios:</label>
+            <textarea id="historial" name="historial"></textarea>
+
+            <button type="button" onclick="window.print()">Imprimir Caso de Uso</button>
+        </form>
+    </div>
+</body>
+</html>
